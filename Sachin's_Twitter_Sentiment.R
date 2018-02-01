@@ -6,6 +6,7 @@
     library(twitteR)
 
 # You'd need to set global options with an authenticated app.
+# To get Secret Keys refer the link: "https://stackoverflow.com/questions/1808855/getting-new-twitter-api-consumer-and-secret-keys"
 
     consumerKey <- "[twitter_consumer_key]"
     consumerSecret <- "[twitter_consumer_secret]"
