@@ -1,5 +1,5 @@
 # Twitter_Sentiment
-Text Analysis of Sachin's Tweets confirms he conveying more Positive Thoughts in his Twitter 
+Text Analysis of Sachin's Tweets confirms he conveying ***More Positive Thoughts*** in his Twitter 
 ***
 
 # Sachin last 452 Tweets retreived from his Twitter Page:
