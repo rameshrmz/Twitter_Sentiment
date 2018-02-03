@@ -51,17 +51,14 @@
     Sentiment_Scores <- tweets$text %>% sentimentr::sentiment_by(by=NULL)
     View(Sentiment_Scores)
 
-#Display Sentiment Score difference in Barchart:
+#Display Sentiment Score difference between iphone vs Android in Barchart:
 no_of_tweets <- as.numeric(count(tweets))
-
 Sentiment_Score_tidy <- cbind(tweets,Sentiment_Scores)
- 
 pos_neg_tweets_percent <- Sentiment_Score_tidy %>% group_by(source) %>% summarise(pos_tweets = sum(ave_sentiment[ave_sentiment > 0])/no_of_tweets, neg_tweets = sum(ave_sentiment[ave_sentiment < 0])/no_of_tweets)
  
 library(tidyverse)
-tidy_tbl <- pos_neg_tweets_percent %>% gather(pos_tweets, neg_tweets, key = "sentiment", value = "ave_sentiment")
-ggplot(tidy_tbl, aes(x=`tweets$source`, y=ave_sentiment, fill= sentiment))+geom_bar(stat="identity", position = "dodge",width = 0.5)+ xlab("Phone Used") + ylab("+/- Tweets Avg")
-
+tidy_tbl <- pos_neg_tweets_percent  %>% gather(pos_tweets, neg_tweets, key = "sentiment", value = "ave_sentiment")
+ggplot(tidy_tbl, aes(x=source, y=ave_sentiment, fill= sentiment))+geom_bar(stat="identity", position = "dodge",width = 0.5)+ xlab("Phone Used") + ylab("+/- Tweets Avg")
 
 # Check Positive & Negative words from Sentiment Analysis:
     Positive_Negative_words <- tweets$text %>% sentimentr::extract_sentiment_terms()
