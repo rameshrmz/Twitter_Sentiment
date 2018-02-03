@@ -31,7 +31,7 @@
 
 # Tweets Count between "Picture/Link" tweets vs "No Picture/Link" tweets.
     library(stringr)
-    library()
+    library(ggplot2)
     tweet_picture_counts <- tweets %>% filter(!str_detect(text, '^"')) %>% count(source, picture = ifelse(str_detect(text, "t.co"), "Picture/link", "No picture/link"))
     ggplot(tweet_picture_counts, aes(source, n, fill = picture)) + geom_bar(stat = "identity", position = "dodge") + labs(x = "", y = "Number of tweets", fill = "")
 
