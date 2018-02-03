@@ -22,9 +22,12 @@ Text Analysis of Sachin's Tweets confirms he conveying ***More Positive Thoughts
 ![picture vs nopic_tweets](https://user-images.githubusercontent.com/5540884/35692484-76449e14-07a1-11e8-9f89-8c8c0f9b6723.png)
   
 # Average Sentiment Score per Tweets
-  *Conclusion of this Analysis: Sachin tweets more Happy/Positive Thoughts to Others
+  *Conclusion of this Analysis: Sachin tweets has more Happy/Positive contents. Especially, while he using iPhone he is using more positive words
 
 <img width="960" alt="aggregated_sentiment_score" src="https://user-images.githubusercontent.com/5540884/35692583-c6b1bff8-07a1-11e8-99a9-25a4cdf5e2da.png">
+
+![iphone_android_sentiments](https://user-images.githubusercontent.com/5540884/35767582-fecb6276-0914-11e8-8da1-5fac8d323a46.png)
+
 
   *Positive & Negative Words*
   
